@@ -95,7 +95,7 @@ class EchoChamber
 
             $events = $this->unserialize(file_get_contents($this->filePath));
             if ($events === false) {
-                throw new Exception('Failed to unserialize events');
+                //throw new Exception('Failed to unserialize events');
             }
 
             if (!is_array($events)) {
@@ -150,7 +150,7 @@ class EchoChamber
 
         $events = $this->unserialize(file_get_contents($this->filePath));
         if ($events === false) {
-            throw new Exception('Failed to unserialize events');
+            //throw new Exception('Failed to unserialize events');
         }
 
         if (!is_array($events)) {
