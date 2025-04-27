@@ -23,7 +23,7 @@ For better performance you may optionally install:
 Create a Worker, this is the process that ensures everything is running smoothly. Put it in a file (e.g., `EchoChamberWorker.php`)
 
 ```php
-<?php require '/../vendor/autoload.php';
+<?php require __DIR__ . '/../vendor/autoload.php';
 
 use Wilaak\EchoChamber;
 
@@ -41,7 +41,7 @@ Run the script from the command line: `php EchoChamberWorker.php`. You should se
 Create a subscriber:
 
 ```php 
-<?php require '/../vendor/autoload.php';
+<?php require __DIR__ . '/../vendor/autoload.php';
 
 use Wilaak\EchoChamber;
 
@@ -55,7 +55,7 @@ $events->subscribe('mychannel', function ($event) {
 Create a publisher:
 
 ```php
-<?php require '/../vendor/autoload.php';
+<?php require __DIR__ . '/../vendor/autoload.php';
 
 use Wilaak\EchoChamber;
 
