@@ -31,7 +31,7 @@ use Wilaak\EchoChamber;
 $events = new EchoChamber(
     'wakeup.fifo', // Pipe used to tell subscribers about new events
     'events.bin',  // Where to temporarily store event data
-    0.25           // How long to persist event data in seconds (lower value increases performance but may cause subscribers to miss events if they are slow)
+    0.1           // How long to persist event data in seconds (lower value increases performance but may cause subscribers to miss events if they are slow)
 );
 $events->runAsWorker();
 ```
